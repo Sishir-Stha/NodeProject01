@@ -24,8 +24,6 @@ export const loginValidator = (req: Request, res: Response, next: NextFunction) 
     * and also to make sure that the data is in the correct format 
     * and also to make sure that the data is not missing any required fields
 */
-  
-
     .then(() => next())
     .catch((err) => next(err));
 };

@@ -1,5 +1,6 @@
 import { Router } from "express";
 import userRoute from "./user/user.route";
+import authRoute from "./auth/auth.routes";
 
 export const router = Router(); 
 /*
@@ -9,6 +10,7 @@ then we export the router so that we can use it in other files
 */
 
 router.use("/users", userRoute);
+router.use("/auth", authRoute);
 
 /*
 router.use() is a method that is used to mount the middleware function at the specified path.
