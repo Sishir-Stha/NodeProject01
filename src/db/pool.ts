@@ -46,7 +46,7 @@ pool.on('connect', () => {
 
 // if successfull then this runs 
 
-pool.on('error', (err) => {
+pool.on('error', (err) =>   {
   console.error('Error occured while connecting to database:', err);
 });
 
